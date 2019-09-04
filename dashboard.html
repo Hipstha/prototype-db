@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Proyecto DB</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main/main.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="aside-menu">
+        <div class="content-aside">
+          <div class="aside-header">
+            <div class="aside-logo">
+              <img src="assets/img/logo-white.png" alt="">
+            </div>
+            <div class="aside-title">
+              <h2>HRTools</h2>
+            </div>
+            <div class="aside-menu-icon">
+              <i class="material-icons">menu</i>
+            </div>
+          </div>
+          <div class="aside-table-menu">
+            <div class="aside-table-conten">
+              <div class="aside-table-menu-dropdown active">
+                <div class="table-menu-icon">
+                  <i class="material-icons">view_list</i>
+                </div>
+                <div class="table-menu-title">
+                  <span>Tablas</span>
+                </div>
+              </div>
+              <div class="to-show-table-menu">
+                <ul>
+                  <li class="active"><a href=""><i class="material-icons">brightness_1</i>General</a></li>
+                  <li><a href="companies.html"><i class="material-icons">brightness_1</i>Empresas</a></li>
+                  <li><a href=""><i class="material-icons">brightness_1</i>Clientes</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="aside-table-menu">
+            <div class="aside-table-conten">
+              <div class="aside-table-menu-dropdown">
+                <div class="table-menu-icon">
+                  <i class="material-icons">person</i>
+                </div>
+                <div class="table-menu-title">
+                  <span>Usuarios</span>
+                </div>
+              </div>
+              <div class="to-show-table-menu">
+                <ul>
+                  <li><a href="users.html"><i class="material-icons">brightness_1</i>Lista de usuarios</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="dashboard">
+        <nav class="navigation">
+          <div class="nav-container">
+            <div class="left-options">
+            </div>
+            <div class="right-options">
+              <div class="find-icons">
+                <i class="material-icons">search</i>
+              </div>
+              <div class="alert-icons">
+                <i class="material-icons">notifications_none</i>
+              </div>
+              <div class="setting-icons">
+                <i class="material-icons">settings_applications</i>
+              </div>
+              <div class="lenguaje-icons">
+                <div class="img-lenguaje-container">
+                  <img src="assets/img/mexican-flag.png" alt="flag">
+                </div>
+              </div>
+              <div class="user">
+                <div class="name">
+                  <span>Hola, <span class="strong-name">Alejandro</span></span>
+                </div>
+                <div class="user-image">
+                  <img src="assets/img/user.jpg" alt="user">
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="dashboard-content">
+          <div class="this-content">
+            <div class="table-body">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Logo</th>
+                    <th scope="col">Empresa</th>
+                    <th scope="col">País</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Teléfono</th>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Teléfono de cliente</th>
+                    <th scope="col">Ext.</th>
+                    <th scope="col">Opciones</th>
+                    <th scope="col"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalScrollable"><i class="material-icons">add</i>Agregar</button></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="assets/img/Bimbo_logo.png" alt=""></td>
+                    <td>Bimbo</td>
+                    <td>México</td>
+                    <td>Nuevo León</td>
+                    <td>81-81-81-81</td>
+                    <td>Daniel Alejandro Cruz Pérez</td>
+                    <td>alex_crz97@hotmail.com</td>
+                    <td>81-81-81-81</td>
+                    <td>123</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
+                    <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-record"><i class="material-icons">close</i>Eliminar</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/jumex-logo.png" alt=""></td>
+                    <td>Jumex</td>
+                    <td>México</td>
+                    <td>Nuevo León</td>
+                    <td>81-81-81-81</td>
+                    <td>Daniel Alejandro Cruz Pérez</td>
+                    <td>alex_crz97@hotmail.com</td>
+                    <td>81-81-81-81</td>
+                    <td>123</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
+                    <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-record"><i class="material-icons">close</i>Eliminar</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/pepsi-logo.png" alt=""></td>
+                    <td>Pepsi</td>
+                    <td>México</td>
+                    <td>Nuevo León</td>
+                    <td>81-81-81-81</td>
+                    <td>Daniel Alejandro Cruz Pérez</td>
+                    <td>alex_crz97@hotmail.com</td>
+                    <td>81-81-81-81</td>
+                    <td>123</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
+                    <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-record"><i class="material-icons">close</i>Eliminar</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/milenio-logo.png" alt=""></td>
+                    <td>Milenio</td>
+                    <td>México</td>
+                    <td>Nuevo León</td>
+                    <td>81-81-81-81</td>
+                    <td>Daniel Alejandro Cruz Pérez</td>
+                    <td>alex_crz97@hotmail.com</td>
+                    <td>81-81-81-81</td>
+                    <td>123</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
+                    <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-record"><i class="material-icons">close</i>Eliminar</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/multimedios-logo.png" alt=""></td>
+                    <td>Multimedios</td>
+                    <td>México</td>
+                    <td>Nuevo León</td>
+                    <td>81-81-81-81</td>
+                    <td>Daniel Alejandro Cruz Pérez</td>
+                    <td>alex_crz97@hotmail.com</td>
+                    <td>81-81-81-81</td>
+                    <td>123</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
+                    <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-record"><i class="material-icons">close</i>Eliminar</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/logo-white.png" alt=""></td>
+                    <td>HRTools</td>
+                    <td>México</td>
+                    <td>Nuevo León</td>
+                    <td>81-81-81-81</td>
+                    <td>Daniel Alejandro Cruz Pérez</td>
+                    <td>alex_crz97@hotmail.com</td>
+                    <td>81-81-81-81</td>
+                    <td>123</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
+                    <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-record"><i class="material-icons">close</i>Eliminar</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/softek-logo.png" alt=""></td>
+                    <td>Softek</td>
+                    <td>México</td>
+                    <td>Nuevo León</td>
+                    <td>81-81-81-81</td>
+                    <td>Daniel Alejandro Cruz Pérez</td>
+                    <td>alex_crz97@hotmail.com</td>
+                    <td>81-81-81-81</td>
+                    <td>123</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
+                    <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-record"><i class="material-icons">close</i>Eliminar</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/uanl-logo.png" alt=""></td>
+                    <td>UANL</td>
+                    <td>México</td>
+                    <td>Nuevo León</td>
+                    <td>81-81-81-81</td>
+                    <td>Daniel Alejandro Cruz Pérez</td>
+                    <td>alex_crz97@hotmail.com</td>
+                    <td>81-81-81-81</td>
+                    <td>123</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
+                    <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-record"><i class="material-icons">close</i>Eliminar</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/nissan-logo.png" alt=""></td>
+                    <td>Nissan</td>
+                    <td>México</td>
+                    <td>Nuevo León</td>
+                    <td>81-81-81-81</td>
+                    <td>Daniel Alejandro Cruz Pérez</td>
+                    <td>alex_crz97@hotmail.com</td>
+                    <td>81-81-81-81</td>
+                    <td>123</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
+                    <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-record"><i class="material-icons">close</i>Eliminar</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Agregar nuevo registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <select class="form-control form-control-lg">
+                          <option>Seleccione el nombre de la empresa</option>
+                          <option>Bimbo</option>
+                          <option>Jumex</option>
+                          <option>Pepsi</option>
+                          <option>Milenio</option>
+                          <option>Multimedio</option>
+                          <option>HRTools</option>
+                          <option>Softek</option>
+                          <option>UANL</option>
+                          <option>Nissan</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <select class="form-control form-control-lg">
+                          <option>Seleccione el cliente</option>
+                          <option>Daniel Alejandro Cruz Pérez</option>
+                          <option>Daniel Alejandro Cruz Pérez</option>
+                          <option>Daniel Alejandro Cruz Pérez</option>
+                        </select>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Aceptar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="modify-record" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Modificar registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <select class="form-control form-control-lg">
+                          <option>Seleccione el nombre de la empresa</option>
+                          <option>Bimbo</option>
+                          <option>Jumex</option>
+                          <option>Pepsi</option>
+                          <option>Milenio</option>
+                          <option>Multimedio</option>
+                          <option>HRTools</option>
+                          <option>Softek</option>
+                          <option>UANL</option>
+                          <option>Nissan</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <select class="form-control form-control-lg">
+                          <option>Seleccione el cliente</option>
+                          <option>Daniel Alejandro Cruz Pérez</option>
+                          <option>Daniel Alejandro Cruz Pérez</option>
+                          <option>Daniel Alejandro Cruz Pérez</option>
+                        </select>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Aceptar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="delete-record" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+              <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Eliminar registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h5>¿Esta usted seguro que desea eliminar el registro?</h5>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Aceptar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

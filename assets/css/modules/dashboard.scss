@@ -1,0 +1,55 @@
+.content{
+  .dashboard{
+    .dashboard-content{
+      width: 100%;
+      .this-content{
+        padding: 1rem;
+        display: block;
+        height: 55rem;
+        width: 100%;
+        overflow: overlay;
+        .table{
+          thead{
+            tr{
+              background-color: #242939;
+              color: white;
+              th{
+                text-align: center;
+                button{
+                  display: flex;
+                  align-items: center;
+                  i{
+                    margin-right: 5px;
+                  }
+                }
+              }
+            }
+          }
+          tbody{
+            tr{
+              background-color: white;
+              td{
+                text-align: center;
+                button{
+                  display: flex;
+                  align-items: center;
+                  i{
+                    margin-right: 5px;
+                  }
+                }
+                img{
+                  width: 4rem;
+                  height: 4rem;
+                  object-fit: contain;
+                }
+              }
+            }
+            tr:hover{
+              background-color: #B4B8CE;
+            }
+          }
+        }
+      }
+    }
+  }
+}

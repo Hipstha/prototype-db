@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Proyecto DB</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main/main.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="aside-menu">
+        <div class="content-aside">
+          <div class="aside-header">
+            <div class="aside-logo">
+              <img src="assets/img/logo-white.png" alt="">
+            </div>
+            <div class="aside-title">
+              <h2>HRTools</h2>
+            </div>
+            <div class="aside-menu-icon">
+              <i class="material-icons">menu</i>
+            </div>
+          </div>
+          <div class="aside-table-menu">
+            <div class="aside-table-conten">
+              <div class="aside-table-menu-dropdown">
+                <div class="table-menu-icon">
+                  <i class="material-icons">view_list</i>
+                </div>
+                <div class="table-menu-title">
+                  <span>Tablas</span>
+                </div>
+              </div>
+              <div class="to-show-table-menu">
+                <ul>
+                  <li><a href="dashboard.html"><i class="material-icons">brightness_1</i>General</a></li>
+                  <li><a href="companies.html"><i class="material-icons">brightness_1</i>Empresas</a></li>
+                  <li><a href="clients.html"><i class="material-icons">brightness_1</i>Clientes</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="aside-table-menu">
+            <div class="aside-table-conten">
+              <div class="aside-table-menu-dropdown active">
+                <div class="table-menu-icon">
+                  <i class="material-icons">person</i>
+                </div>
+                <div class="table-menu-title">
+                  <span>Usuarios</span>
+                </div>
+              </div>
+              <div class="to-show-table-menu">
+                <ul>
+                  <li class="active"><a href=""><i class="material-icons">brightness_1</i>Lista de usuarios</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="dashboard">
+        <nav class="navigation">
+          <div class="nav-container">
+            <div class="left-options">
+            </div>
+            <div class="right-options">
+              <div class="find-icons">
+                <i class="material-icons">search</i>
+              </div>
+              <div class="alert-icons">
+                <i class="material-icons">notifications_none</i>
+              </div>
+              <div class="setting-icons">
+                <i class="material-icons">settings_applications</i>
+              </div>
+              <div class="lenguaje-icons">
+                <div class="img-lenguaje-container">
+                  <img src="assets/img/mexican-flag.png" alt="flag">
+                </div>
+              </div>
+              <div class="user">
+                <div class="name">
+                  <span>Hola, <span class="strong-name">Alejandro</span></span>
+                </div>
+                <div class="user-image">
+                  <img src="assets/img/user.jpg" alt="user">
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="dashboard-content">
+          <div class="this-content">
+            <div class="table-body">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Imágen</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Telefono personal</th>
+                    <th scope="col">Teléfono oficina</th>
+                    <th scope="col">Ext</th>
+                    <th scope="col">Domicilio</th>
+                    <th scope="col">Opciones</th>
+                    <th scope="col"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalScrollable"><i class="material-icons">add</i>Agregar</button></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="assets/img/user.jpg" alt=""></td>
+                    <td>Daniel Alejandro Cruz Pérez</td>
+                    <td>alex_crz97@hotmail.com</td>
+                    <td>81-81-81-81</td>
+                    <td>82-82-82-82</td>
+                    <td>123</td>
+                    <td>Las puentes 1° sector #535</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
+                    <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-record"><i class="material-icons">close</i>Eliminar</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.jpg" alt=""></td>
+                    <td>Daniel Alejandro Cruz Pérez</td>
+                    <td>alex_crz97@hotmail.com</td>
+                    <td>81-81-81-81</td>
+                    <td>82-82-82-82</td>
+                    <td>123</td>
+                    <td>Las puentes 1° sector #535</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
+                    <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-record"><i class="material-icons">close</i>Eliminar</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.jpg" alt=""></td>
+                    <td>Daniel Alejandro Cruz Pérez</td>
+                    <td>alex_crz97@hotmail.com</td>
+                    <td>81-81-81-81</td>
+                    <td>82-82-82-82</td>
+                    <td>123</td>
+                    <td>Las puentes 1° sector #535</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
+                    <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-record"><i class="material-icons">close</i>Eliminar</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.jpg" alt=""></td>
+                    <td>Daniel Alejandro Cruz Pérez</td>
+                    <td>alex_crz97@hotmail.com</td>
+                    <td>81-81-81-81</td>
+                    <td>82-82-82-82</td>
+                    <td>123</td>
+                    <td>Las puentes 1° sector #535</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
+                    <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-record"><i class="material-icons">close</i>Eliminar</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.jpg" alt=""></td>
+                    <td>Daniel Alejandro Cruz Pérez</td>
+                    <td>alex_crz97@hotmail.com</td>
+                    <td>81-81-81-81</td>
+                    <td>82-82-82-82</td>
+                    <td>123</td>
+                    <td>Las puentes 1° sector #535</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
+                    <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-record"><i class="material-icons">close</i>Eliminar</button></td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/img/user.jpg" alt=""></td>
+                    <td>Daniel Alejandro Cruz Pérez</td>
+                    <td>alex_crz97@hotmail.com</td>
+                    <td>81-81-81-81</td>
+                    <td>82-82-82-82</td>
+                    <td>123</td>
+                    <td>Las puentes 1° sector #535</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
+                    <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-record"><i class="material-icons">close</i>Eliminar</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Agregar nueva empresa</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Imágen (opcional)</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Nombre</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese el nombre de la empresa">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese el país de origen de la empresa">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Teléfono personal</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese el estado de origen de la empresa">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Teléfono oficina</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese el teléfono de la empresa">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Ext.</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese el sitio web de la empresa">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Domicilio</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese el email de la empresa">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Aceptar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="modify-record" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Modificar registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Imágen (opcional)</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Nombre</label>
+                        <input value="Daniel Alejandro Cruz Pérez" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese el nombre de la empresa">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">E-mail</label>
+                        <input value="alex_crz97@hotmail.com" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese el país de origen de la empresa">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Teléfono personal</label>
+                        <input value="81-81-81-81" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese el estado de origen de la empresa">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Teléfono oficina</label>
+                        <input value="82-82-82-82	" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese el teléfono de la empresa">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Ext.</label>
+                        <input value="123" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese el sitio web de la empresa">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Domicilio</label>
+                        <input value="Las puentes 1° sector #535" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese el email de la empresa">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Aceptar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="delete-record" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+              <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Eliminar registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <h5>¿Esta usted seguro que desea eliminar el registro?</h5>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Aceptar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

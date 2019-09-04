@@ -1,0 +1,29 @@
+body{
+  background-color: #F0F1F6;
+  .content-index{
+    width: 35rem;
+    margin: 0px auto;
+    .form-content{
+      margin-top: 8rem;
+      .logo{
+        margin: 0px auto;
+        width: 6rem;
+        height: 6rem;
+        margin-bottom: 2rem;
+        img{
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+      .form{
+        background-color: white;
+        padding: 1rem 3rem;
+        border-radius: 15px;
+        .submit{
+          text-align: center;
+        }
+      }
+    }
+  }
+}
