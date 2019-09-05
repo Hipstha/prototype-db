@@ -71,25 +71,76 @@
             </div>
             <div class="right-options">
               <div class="find-icons">
-                <i class="material-icons">search</i>
+                <div class="find-icons-content">
+                  <i class="material-icons">search</i>
+                </div>
               </div>
               <div class="alert-icons">
-                <i class="material-icons">notifications_none</i>
+                <div class="alert-icons-content">
+                  <i class="material-icons">notifications_none</i>
+                </div>
               </div>
               <div class="setting-icons">
-                <i class="material-icons">settings_applications</i>
+                <div class="setting-icons-content">
+                  <i class="material-icons">settings_applications</i>
+                </div>
               </div>
               <div class="lenguaje-icons">
-                <div class="img-lenguaje-container">
-                  <img src="assets/img/mexican-flag.png" alt="flag">
+                <div class="lenguaje-icons-content">
+                  <div class="img-lenguaje-container">
+                    <img src="assets/img/mexican-flag.png" alt="flag">
+                  </div>
                 </div>
               </div>
               <div class="user">
-                <div class="name">
-                  <span>Hola, <span class="strong-name">Alejandro</span></span>
+                <div class="user-content">
+                  <div class="name">
+                    <span>Hola, <span class="strong-name">Alejandro</span></span>
+                  </div>
+                  <div class="user-image">
+                    <img src="assets/img/user.jpg" alt="user">
+                  </div>
                 </div>
-                <div class="user-image">
-                  <img src="assets/img/user.jpg" alt="user">
+                <div class="user-dropdown">
+                  <div class="user-dropdown-content">
+                    <div class="user-dropdown-header">
+
+                    </div>
+                    <div class="user-dropdown-info">
+                      <div class="user-dropdown-image">
+                        <img src="assets/img/user.jpg" alt="user">
+                      </div>
+                      <div class="user-dropdown-text">
+                        <div class="user-dropdown-name">
+                          <span>Alejandro Cruz</span>
+                        </div>
+                        <div class="user-dropdown-career">
+                          <span>Desarrollador Web</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="user-dropdown-body">
+                      <div class="user-dropdown-options">
+                        <div class="user-dropdown-option">
+                          <div class="option-icon">
+                            <i class="material-icons">account_box</i>
+                          </div>
+                          <div class="option-text">
+                            <span>Mi perfil</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="user-dropdown-footer">
+                      <div class="user-dropdown-footer-content">
+                        <div class="user-dropdown-footer-options">
+                          <div class="close-seasion">
+                              <button type="button" class="btn btn-close-seasion">Cerrar sesión</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -119,7 +170,7 @@
                     <td>81-81-81-81</td>
                     <td>123</td>
                     <td>alex_crz97@hotmail.com</td>
-                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
+                    <td><button type="button" class="btn btn-modify" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
                     <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-record"><i class="material-icons">close</i>Eliminar</button></td>
                   </tr>
                   <tr>
@@ -129,7 +180,7 @@
                     <td>81-81-81-81</td>
                     <td>123</td>
                     <td>alex_crz97@hotmail.com</td>
-                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
+                    <td><button type="button" class="btn btn-modify" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
                     <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-record"><i class="material-icons">close</i>Eliminar</button></td>
                   </tr>
                   <tr>
@@ -139,7 +190,7 @@
                     <td>81-81-81-81</td>
                     <td>123</td>
                     <td>alex_crz97@hotmail.com</td>
-                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
+                    <td><button type="button" class="btn btn-modify" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
                     <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-record"><i class="material-icons">close</i>Eliminar</button></td>
                   </tr>
                   <tr>
@@ -149,7 +200,7 @@
                     <td>81-81-81-81</td>
                     <td>123</td>
                     <td>alex_crz97@hotmail.com</td>
-                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
+                    <td><button type="button" class="btn btn-modify" data-toggle="modal" data-target="#modify-record"><i class="material-icons">error_outline</i>Modificar</button></td>
                     <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-record"><i class="material-icons">close</i>Eliminar</button></td>
                   </tr>
                 </tbody>
@@ -262,7 +313,7 @@
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary">Aceptar</button>
+                    <button type="button" class="btn btn-modify">Aceptar</button>
                   </div>
                 </div>
               </div>

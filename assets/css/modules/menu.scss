@@ -5,6 +5,8 @@
     height: 100vh;
     width: 5rem;
     transition: 0.5s;
+    position: fixed;
+    z-index: 10;
     .content-aside{
       //width: 2rem;
       //padding: 0 22px;
@@ -160,7 +162,11 @@
   }
   .dashboard{
     width: 100%;
+    padding-left: 5rem;
     .navigation{
+      position: fixed;
+      width: 96%;
+      z-index: 1;
       .nav-container{
         background-color: white;
         display: flex;
@@ -174,15 +180,18 @@
           align-items: center;
           margin-right: 1rem;
           .find-icons, .alert-icons, .setting-icons, .lenguaje-icons{
-            height: 3rem;
-            display: flex;
-            align-items: center;
-            padding: 0 10px;
-            color: #b4b8ce;
-            transition: 0.5s;
-            cursor: pointer;
-            i{
-              font-size: 35px;
+            height: 100%;
+            .find-icons-content, .alert-icons-content, .setting-icons-content, .lenguaje-icons-content{
+              height: 100%;
+              display: flex;
+              align-items: center;
+              padding: 0 10px;
+              color: #b4b8ce;
+              transition: 0.5s;
+              cursor: pointer;
+              i{
+                font-size: 35px;
+              }
             }
           }
           .find-icons:hover, .alert-icons:hover, .setting-icons:hover, .lenguaje-icons:hover{
@@ -201,35 +210,148 @@
             }
           }
           .user{
-            display: flex;
-            align-items: center;
             height: 100%;
-            cursor: pointer;
-            transition: 0.5s;
-            .name{
-              margin: 0 10px;
-              font-family: $lato-regular;
-              span{
-                color: #959cb6;
-                .strong-name{
-                  color: #6c7293;
+            
+            .user-content{
+              display: flex;
+              align-items: center;
+              height: 100%;
+              cursor: pointer;
+              transition: 0.5s;
+              .name{
+                margin: 0 10px;
+                font-family: $lato-regular;
+                span{
+                  color: #959cb6;
+                  .strong-name{
+                    color: #6c7293;
+                  }
+                }
+              }
+              .user-image{
+                width: 38px;
+                height: 38px;
+                margin-right: 10px;
+                img{
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: 50%;
                 }
               }
             }
-            .user-image{
-              width: 38px;
-              height: 38px;
-              margin-right: 10px;
-              img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 50%;
+            .user-dropdown{
+              transition: 0.3s;
+              background-color: white;
+              width: 15rem;
+              box-shadow: 0px 0px 5px -3px black;
+              position: absolute;
+              right: 1.2rem;
+              display: block;
+              overflow: hidden;
+              height: 0rem;
+              .user-dropdown-content{
+                .user-dropdown-header{
+                  background-color: #4863D6;
+                  height: 4rem;
+                  margin-bottom: -25px;
+                }
+                .user-dropdown-info{
+                  display: flex;
+                  align-items: center;
+                  padding: 0 15px;
+                  margin-bottom: 2rem;
+                  .user-dropdown-image{
+                    height: 60px;
+                    width: 60px;
+                    margin-right: 1rem;
+                    img{
+                      height: 100%;
+                      width: 100%;
+                      object-fit: cover;
+                      border-radius: 50%;
+                    }
+                  }
+                  .user-dropdown-text{
+                    text-align: center;
+                    .user-dropdown-name{
+                      color: white;
+                      font-weight: bold;
+                      font-family: $lato-bold;
+                      font-size: 18px;
+                      position: relative;
+                      bottom: 8px;
+                    }
+                    .user-dropdown-career{
+                      color: #6c7293;
+                      font-family: $lato-regular;
+                      font-size: 15px;
+                      position: relative;
+                      bottom: 3px;
+                    }
+                  }
+                }
+                .user-dropdown-body{
+                  padding: 0 15px;
+                  .user-dropdown-options{
+                    padding-bottom: 1.5rem;
+                    border-bottom: 1px solid #acb3ce;
+                    .user-dropdown-option{
+                      transition: 0.3s;
+                      display: flex;
+                      height: 2rem;
+                      cursor: pointer;
+                      .option-icon{
+                        margin-right: 0.8rem;
+                        i{
+                          color: #acb3ce;
+                          font-size: 30px;
+                        }
+                      }
+                      .option-text{
+                        color: #484d63;
+                        font-family: $lato-regular;
+                        font-size: 20px;
+                      }
+                    }
+                    .user-dropdown-option:hover{
+                      background-color: #F0F3FF;
+                    }
+                  }
+                }
+                .user-dropdown-footer{
+                  padding: 10px 15px;
+                  .user-dropdown-footer-content{
+                    .user-dropdown-footer-options{
+                      .close-seasion{
+                        display: flex;
+                        justify-content: center;
+                        .btn-close-seasion{
+                          background-color: #EEF1FF;
+                          color: #5D78FF;
+                          transition: 0.3s;
+                          font-family: $lato-bold;
+                        }
+                        .btn-close-seasion:hover{
+                          color: white;
+                          background-color: #5D78FF;
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
           }
           .user:hover{
-            background-color: #B4B8CE;
+            .user-dropdown{
+              height: 16rem;
+            }
+          }
+          .user-content:hover, .lenguaje-icons-content:hover, 
+          .setting-icons-content:hover, .alert-icons-content:hover, 
+          .find-icons-content:hover{
+            background-color: #F0F3FF;
           }
         }
       }

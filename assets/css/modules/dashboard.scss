@@ -2,12 +2,10 @@
   .dashboard{
     .dashboard-content{
       width: 100%;
+      padding-top: 4rem;
       .this-content{
         padding: 1rem;
-        display: block;
-        height: 55rem;
         width: 100%;
-        overflow: overlay;
         .table{
           thead{
             tr{
@@ -36,6 +34,13 @@
                   i{
                     margin-right: 5px;
                   }
+                }
+                .btn-modify{
+                  background-color: #566ee7;
+                  color: white;
+                }
+                .btn.btn-modify:hover{
+                  background-color: #3d4fab;
                 }
                 img{
                   width: 4rem;
