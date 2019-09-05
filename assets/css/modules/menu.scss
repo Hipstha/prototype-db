@@ -196,6 +196,24 @@
               }
             }
           }
+          .find-icons{
+            .find-dropdown{
+              transition: .3s;
+              background-color: #fff;
+              width: 17rem;
+              box-shadow: 0px 0px 5px -3px #000;
+              position: absolute;
+              right: 22.2rem;
+              display: block;
+              overflow: hidden;
+              height: 0rem;
+            }
+          }
+          .find-icons:hover{
+            .find-dropdown{
+              height: 38px;
+            }
+          }
           .find-icons:hover, .alert-icons:hover, .setting-icons:hover, .lenguaje-icons:hover{
             color: #5D77FD;
           }
